@@ -7,3 +7,4 @@ format:
     hash: true
     chalkboard: false
     preview-links: auto
+    css: leaflet.css

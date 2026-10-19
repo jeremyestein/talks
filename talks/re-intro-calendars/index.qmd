@@ -1,0 +1,120 @@
+---
+title: "Re-introduction"
+subtitle: "with a brief mention of calendar systems"
+date: 2026-10-19
+description: "Re-intro, status update, weeknotes, calendar systems"
+---
+
+## Origin
+
+
+```{python}
+from ipyleaflet import Circle, LayersControl, Map, Marker, ScaleControl, TileLayer, basemaps, basemap_to_tiles
+
+cht = (51.62315272689227, -0.5185542750309865)
+hh90 = (51.51826807181277, -0.11807725782907953)
+splodges = (cht,)
+markers = (hh90,)
+
+m = Map(
+    center=(51.57, -0.25),
+    zoom=10,
+)
+m.layout.width = "800px"
+m.layout.height = "700px"
+
+for splodge in splodges:
+    radius, opacity = (12000, 0.35)
+    m.add(Circle(location=splodge, radius=radius, stroke=False,
+                fill_color="orange", fill_opacity=opacity))
+for marker in markers:
+    m.add_layer(Marker(location=marker))
+
+m.add(ScaleControl(position="bottomleft"))
+m
+```
+
+::: {.notes}
+CHT NDB beacon!
+:::
+
+## Incremental bullets
+
+::: {.incremental}
+- First point
+- Second point
+- Third point
+:::
+
+## Two columns
+
+:::: {.columns}
+::: {.column width="50%"}
+Left column
+:::
+::: {.column width="50%"}
+Right column
+:::
+::::
+
+## Code
+
+```python
+def hello():
+    print("Hello, world!")
+```
+
+
+# Calendar systems
+
+## PostgreSQL date types
+
+> Dates are counted according to the Gregorian calendar, even in years before that calendar was introduced
+
+https://www.postgresql.org/docs/18/datatype-datetime.html
+
+## Why are 11 days missing?
+
+```{python}
+%%bash
+cal -m 9 1752
+
+```
+
+
+## Gregorian calendar
+
+* It's mainly about leap days (and Easter)
+
+::: {.fragment}
+| According to | 1 x sun orbit == | Leap year pattern |
+| --- | --- | --- |
+| Julian Calendar | 365.25 rotations | 1 / 4 |
+| Gregorian Calendar | 365.2425 rotations | 1 / 4 - 1 / 100 + 1 / 400 |
+| The actual earth | 365.2422 rotations | |
+:::
+
+
+::: {.incremental}
+* First adopted Friday 15 October 1582
+:::
+
+::: {.notes}
+First day of the new Gregorian calendar was Friday 15 October 1582.
+444 years and 5 days ago!
+
+Thursday 4 October 1582 was followed by Friday 15 October 1582.
+
+They jumped forward, missing out 10 days.
+
+:::
+
+# Weeknotes?
+
+## Why
+
+* More problem oriented
+
+## Thanks
+
+Questions?
