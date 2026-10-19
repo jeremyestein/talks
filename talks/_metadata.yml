@@ -1,0 +1,9 @@
+# Defaults applied to every talk under talks/
+author: "Jeremy Stein"
+format:
+  revealjs:
+    theme: default
+    slide-number: true
+    hash: true
+    chalkboard: false
+    preview-links: auto

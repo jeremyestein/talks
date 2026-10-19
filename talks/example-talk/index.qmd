@@ -1,0 +1,51 @@
+---
+title: "Example Talk"
+subtitle: "A skeleton reveal.js presentation"
+date: 2026-10-19
+description: "Template to copy when starting a new talk."
+---
+
+## Introduction
+
+- Each talk lives in its own folder under `talks/`
+- Copy this folder to start a new one
+
+## Incremental bullets
+
+::: {.incremental}
+- First point
+- Second point
+- Third point
+:::
+
+## Two columns
+
+:::: {.columns}
+::: {.column width="50%"}
+Left column
+:::
+::: {.column width="50%"}
+Right column
+:::
+::::
+
+## Code
+
+```python
+def hello():
+    print("Hello, world!")
+```
+
+## Speaker notes
+
+Press `S` to open the speaker view.
+
+::: {.notes}
+These notes only appear in speaker view.
+:::
+
+# Section heading
+
+## Thanks
+
+Questions?
