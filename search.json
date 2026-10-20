@@ -1,5 +1,54 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Talks",
+    "section": "",
+    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nDescription\n\n\n\n\n\n\n\n\nOct 20, 2026\n\n\nRe-introduction\n\n\nRe-intro, status update, weeknotes, calendar systems\n\n\n\n\n\n\nOct 19, 2026\n\n\nExample Talk\n\n\nTemplate to copy when starting a new talk.\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "talks/example-talk/index.html#introduction",
+    "href": "talks/example-talk/index.html#introduction",
+    "title": "Example Talk",
+    "section": "Introduction",
+    "text": "Introduction\n\nEach talk lives in its own folder under talks/\nCopy this folder to start a new one"
+  },
+  {
+    "objectID": "talks/example-talk/index.html#incremental-bullets",
+    "href": "talks/example-talk/index.html#incremental-bullets",
+    "title": "Example Talk",
+    "section": "Incremental bullets",
+    "text": "Incremental bullets\n\nFirst point\nSecond point\nThird point"
+  },
+  {
+    "objectID": "talks/example-talk/index.html#two-columns",
+    "href": "talks/example-talk/index.html#two-columns",
+    "title": "Example Talk",
+    "section": "Two columns",
+    "text": "Two columns\n\n\nLeft column\n\nRight column"
+  },
+  {
+    "objectID": "talks/example-talk/index.html#code",
+    "href": "talks/example-talk/index.html#code",
+    "title": "Example Talk",
+    "section": "Code",
+    "text": "Code\ndef hello():\n    print(\"Hello, world!\")"
+  },
+  {
+    "objectID": "talks/example-talk/index.html#speaker-notes",
+    "href": "talks/example-talk/index.html#speaker-notes",
+    "title": "Example Talk",
+    "section": "Speaker notes",
+    "text": "Speaker notes\nPress S to open the speaker view.\n\nThese notes only appear in speaker view."
+  },
+  {
+    "objectID": "talks/example-talk/index.html#thanks",
+    "href": "talks/example-talk/index.html#thanks",
+    "title": "Example Talk",
+    "section": "Thanks",
+    "text": "Thanks\nQuestions?"
+  },
+  {
     "objectID": "talks/re-intro-calendars/index.html#origin",
     "href": "talks/re-intro-calendars/index.html#origin",
     "title": "Re-introduction",
@@ -18,7 +67,7 @@
     "href": "talks/re-intro-calendars/index.html#about-me",
     "title": "Re-introduction",
     "section": "About me",
-    "text": "About me\n\n\n   \n   \n    \n    \n\n\n\n\n\nA parasitic bolete (Pseudoboletus parasiticus) growing on a common earthball (Scleroderma citrinum)"
+    "text": "About me\n\n\n   \n   \n    \n    \n\n\n\n\n\nA parasitic bolete (Pseudoboletus parasiticus, top and bottom) growing on a common earthball (Scleroderma citrinum, centre)"
   },
   {
     "objectID": "talks/re-intro-calendars/index.html#emap-waveform-exporter",
@@ -80,55 +129,6 @@
     "objectID": "talks/re-intro-calendars/index.html#thanks",
     "href": "talks/re-intro-calendars/index.html#thanks",
     "title": "Re-introduction",
-    "section": "Thanks",
-    "text": "Thanks\nQuestions?"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Talks",
-    "section": "",
-    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nDescription\n\n\n\n\n\n\n\n\nOct 20, 2026\n\n\nRe-introduction\n\n\nRe-intro, status update, weeknotes, calendar systems\n\n\n\n\n\n\nOct 19, 2026\n\n\nExample Talk\n\n\nTemplate to copy when starting a new talk.\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "talks/example-talk/index.html#introduction",
-    "href": "talks/example-talk/index.html#introduction",
-    "title": "Example Talk",
-    "section": "Introduction",
-    "text": "Introduction\n\nEach talk lives in its own folder under talks/\nCopy this folder to start a new one"
-  },
-  {
-    "objectID": "talks/example-talk/index.html#incremental-bullets",
-    "href": "talks/example-talk/index.html#incremental-bullets",
-    "title": "Example Talk",
-    "section": "Incremental bullets",
-    "text": "Incremental bullets\n\nFirst point\nSecond point\nThird point"
-  },
-  {
-    "objectID": "talks/example-talk/index.html#two-columns",
-    "href": "talks/example-talk/index.html#two-columns",
-    "title": "Example Talk",
-    "section": "Two columns",
-    "text": "Two columns\n\n\nLeft column\n\nRight column"
-  },
-  {
-    "objectID": "talks/example-talk/index.html#code",
-    "href": "talks/example-talk/index.html#code",
-    "title": "Example Talk",
-    "section": "Code",
-    "text": "Code\ndef hello():\n    print(\"Hello, world!\")"
-  },
-  {
-    "objectID": "talks/example-talk/index.html#speaker-notes",
-    "href": "talks/example-talk/index.html#speaker-notes",
-    "title": "Example Talk",
-    "section": "Speaker notes",
-    "text": "Speaker notes\nPress S to open the speaker view.\n\nThese notes only appear in speaker view."
-  },
-  {
-    "objectID": "talks/example-talk/index.html#thanks",
-    "href": "talks/example-talk/index.html#thanks",
-    "title": "Example Talk",
     "section": "Thanks",
     "text": "Thanks\nQuestions?"
   }
