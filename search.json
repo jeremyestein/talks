@@ -53,21 +53,21 @@
     "href": "talks/re-intro-calendars/index.html#calendar-new-style-act-1750",
     "title": "Re-introduction",
     "section": "Calendar (New Style) Act 1750",
-    "text": "Calendar (New Style) Act 1750\n\nBritish Empire moves from Julian to a calender identical to the Gregorian calendar\nNew year’s day moves from 25th March to 1st January\nSeptember 1752 gets a bit of a trim\n1751 loses three months altogether(!)\n\n\n\n\n\nAn issue of The London Gazette spanning the changeover date, showing Old Style (O.S.) and New Style (N.S.) dates"
-  },
-  {
-    "objectID": "talks/re-intro-calendars/index.html#gregorian-calendar",
-    "href": "talks/re-intro-calendars/index.html#gregorian-calendar",
-    "title": "Re-introduction",
-    "section": "Gregorian calendar",
-    "text": "Gregorian calendar\n\nIt’s mainly about leap days (and Easter)\n\n\n\n\n\n\n\n\n\n\nAccording to\nRotations in a solar orbit\nExtra days\n\n\n\n\nJulian Calendar\n\\(365.2500\\)\n\\(\\frac{1}{4}\\)\n\n\nGregorian Calendar\n\\(365.2425\\)\n\\(\\frac{1}{4} - \\frac{1}{100} + \\frac{1}{400}\\)\n\n\nThe actual earth\n\\(\\approx 365.2422\\)\n\n\n\n\n\n\nFirst adopted Friday 15 October 1582\n\n\nFirst day of the new Gregorian calendar was Friday 15 October 1582. 444 years and 5 days ago!\nJulian takes ~128 years to accumulate one day of discrepancy. Gregorian takes ~3000 years.\nThursday 4 October 1582 was followed by Friday 15 October 1582.\nThey jumped forward, missing out 10 days."
+    "text": "Calendar (New Style) Act 1750\n\nBritish Empire moves from Julian to a calender identical to the Gregorian calendar\nNew year’s day moves from 25th March to 1st January\nSeptember 1752 gets a bit of a trim\n1751 loses three months altogether(!)\n\n\n\n\n\nAn issue of The London Gazette spanning the changeover date, showing Old Style (O.S.) and New Style (N.S.) dates\n\n\n\n\nWill show you a summary to make it clearer…"
   },
   {
     "objectID": "talks/re-intro-calendars/index.html#summary",
     "href": "talks/re-intro-calendars/index.html#summary",
     "title": "Re-introduction",
     "section": "Summary",
-    "text": "Summary\nOne row == one adjacent day\n\n\n\n\n\n\n\n\n\nBritain (Julian, year starts 25 March)\nBritain (Julian, year starts 1 Jan)\nMore Veneto(Julian, year starts 1 March)\nGregorian\n\n\n\n\n31 Dec 1751\n31 Dec 1751\n31 Dec 1751\n11 Jan 1752\n\n\n1 Jan 1751\n1 Jan 1752\n1 Jan 1751\n12 Jan 1752\n\n\n\n(highlighted = local date in use on that day)"
+    "text": "Summary\nOne row == one adjacent day\n\n\n\n\n\n\n\n\nBritain (Julian, year starts 25 March)\nBritain (Julian, year starts 1 Jan)\nGregorian\n\n\n\n\n31 Dec 1751\n31 Dec 1751\n11 Jan 1752\n\n\n1 Jan 1751\n1 Jan 1752\n12 Jan 1752\n\n\n\n(highlighted = local date in use on that day)"
+  },
+  {
+    "objectID": "talks/re-intro-calendars/index.html#why-gregorian-calendar",
+    "href": "talks/re-intro-calendars/index.html#why-gregorian-calendar",
+    "title": "Re-introduction",
+    "section": "Why Gregorian calendar?",
+    "text": "Why Gregorian calendar?\n\nIt’s mainly about leap days (and Easter)\n\n\n\n\n\n\n\n\n\n\nAccording to\nRotations in a solar orbit\nExtra days\n\n\n\n\nJulian Calendar\n\\(365.2500\\)\n\\(\\frac{1}{4}\\)\n\n\nGregorian Calendar\n\\(365.2425\\)\n\\(\\frac{1}{4} - \\frac{1}{100} + \\frac{1}{400}\\)\n\n\nThe actual earth\n\\(\\approx 365.2422\\)\n\n\n\n\n\n\nFirst adopted Friday 15 October 1582 (but not everywhere)\n\n\nFirst day of the new Gregorian calendar was Friday 15 October 1582. 444 years and 5 days ago!\nJulian takes ~128 years to accumulate one day of discrepancy. Gregorian takes ~3000 years.\nThursday 4 October 1582 was followed by Friday 15 October 1582.\nThey jumped forward, missing out 10 days."
   },
   {
     "objectID": "talks/re-intro-calendars/index.html#conversion-in-python",
@@ -82,13 +82,6 @@
     "title": "Re-introduction",
     "section": "Yet more calendars…",
     "text": "Yet more calendars…\n&gt;&gt;&gt; import convertdate\n&gt;&gt;&gt; convertdate.\nconvertdate.armenian           convertdate.indian_civil       \nconvertdate.bahai              convertdate.islamic            \nconvertdate.coptic             convertdate.iso                \nconvertdate.data               convertdate.julian             \nconvertdate.daycount           convertdate.julianday          \nconvertdate.dublin             convertdate.mayan              \nconvertdate.french_republican  convertdate.ordinal            \nconvertdate.gregorian          convertdate.persian            \nconvertdate.hebrew             convertdate.positivist         \nconvertdate.holidays           convertdate.utils"
-  },
-  {
-    "objectID": "talks/re-intro-calendars/index.html#why-1",
-    "href": "talks/re-intro-calendars/index.html#why-1",
-    "title": "Re-introduction",
-    "section": "Why",
-    "text": "Why\n\nMore problem oriented"
   },
   {
     "objectID": "talks/re-intro-calendars/index.html#thanks",

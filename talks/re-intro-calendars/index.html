@@ -226,10 +226,10 @@ Jeremy Stein
 </section>
 <section id="origin" class="slide level2">
 <h2>Origin</h2>
-<div id="b5aa9e5d" class="cell" data-execution_count="1">
+<div id="aa5bed4d" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display" data-execution_count="1">
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id":"adf7ccf19dcc443db503931a0418edb9","version_major":2,"version_minor":0,"quarto_mimetype":"application/vnd.jupyter.widget-view+json"}
+{"model_id":"42533abe518545a38bceadddba3f82f3","version_major":2,"version_minor":0,"quarto_mimetype":"application/vnd.jupyter.widget-view+json"}
 </script>
 </div>
 </div>
@@ -357,7 +357,7 @@ flowchart LR
 </section>
 <section id="why" class="slide level2">
 <h2>Why</h2>
-<p>Connecting Histories, Connecting Heritage: Early Modern Cities and Their Afterlives</p>
+<p><a href="https://www.connecting-histories-connecting-heritage.org/">Connecting Histories, Connecting Heritage: Early Modern Cities and Their Afterlives</a></p>
 <aside class="notes">
 <p>Not going into full project details, but we made a Django site to collect historical documents, and many of those documents don’t use the Gregorian calendar that we use today.</p>
 <style type="text/css">
@@ -427,16 +427,16 @@ flowchart LR
 <li class="fragment">September 1752 gets a bit of a trim</li>
 <li class="fragment">1751 loses three months altogether(!)</li>
 </ul>
-<div class="fragment">
+<div class="fragment small-caption">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="../../images/gazette.png" alt="An issue of The London Gazette spanning the changeover date" height="200"></p>
+<p><img data-src="../../images/gazette.png" alt="An issue of The London Gazette spanning the changeover date" height="150"></p>
 <figcaption>An issue of The London Gazette spanning the changeover date, showing Old Style (O.S.) and New Style (N.S.) dates</figcaption>
 </figure>
 </div>
 </div>
 <aside class="notes">
-
+<p>Will show you a summary to make it clearer…</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -449,8 +449,39 @@ flowchart LR
           display:block!important;
       }</style></aside>
 </section>
-<section id="gregorian-calendar" class="slide level2">
-<h2>Gregorian calendar</h2>
+<section id="summary" class="slide level2">
+<h2>Summary</h2>
+<p>One row == one adjacent day</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Britain (Julian, year starts 25 March)</th>
+<th>Britain (Julian, year starts 1 Jan)</th>
+<th>Gregorian</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><mark>31 Dec 1751</mark></td>
+<td>31 Dec 1751</td>
+<td>11 Jan 1752</td>
+</tr>
+<tr class="even">
+<td>1 Jan 1751</td>
+<td><mark>1 Jan 1752</mark></td>
+<td>12 Jan 1752</td>
+</tr>
+</tbody>
+</table>
+<p>(highlighted = local date in use on that day)</p>
+</section>
+<section id="why-gregorian-calendar" class="slide level2">
+<h2>Why Gregorian calendar?</h2>
 <ul>
 <li>It’s mainly about leap days (and Easter)</li>
 </ul>
@@ -488,7 +519,7 @@ flowchart LR
 </table>
 </div>
 <ul>
-<li class="fragment">First adopted <strong>Friday 15 October 1582</strong></li>
+<li class="fragment">First adopted <strong>Friday 15 October 1582</strong> (but not everywhere)</li>
 </ul>
 <aside class="notes">
 <p>First day of the new Gregorian calendar was Friday 15 October 1582. 444 years and 5 days ago!</p>
@@ -507,45 +538,10 @@ flowchart LR
           display:block!important;
       }</style></aside>
 </section>
-<section id="summary" class="slide level2">
-<h2>Summary</h2>
-<p>One row == one adjacent day</p>
-<table class="caption-top">
-<colgroup>
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Britain (Julian, year starts 25 March)</th>
-<th>Britain (Julian, year starts 1 Jan)</th>
-<th>More Veneto(Julian, year starts 1 March)</th>
-<th>Gregorian</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><mark>31 Dec 1751</mark></td>
-<td>31 Dec 1751</td>
-<td>31 Dec 1751</td>
-<td>11 Jan 1752</td>
-</tr>
-<tr class="even">
-<td>1 Jan 1751</td>
-<td><mark>1 Jan 1752</mark></td>
-<td>1 Jan 1751</td>
-<td>12 Jan 1752</td>
-</tr>
-</tbody>
-</table>
-<p>(highlighted = local date in use on that day)</p>
-</section>
 <section id="conversion-in-python" class="slide level2">
 <h2>Conversion in Python</h2>
 <p>Python package called <code>convertdate</code></p>
-<div id="886c6c07" class="cell" data-execution_count="2">
+<div id="0ce5e1a4" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a aria-label="1"></a><span class="im">import</span> convertdate</span>
 <span id="cb2-2"><a aria-label="2"></a></span>
 <span id="cb2-3"><a aria-label="3"></a>julians <span class="op">=</span> ((<span class="dv">1752</span>, <span class="dv">9</span>, <span class="dv">2</span>), (<span class="dv">1752</span>, <span class="dv">9</span>, <span class="dv">3</span>))</span>
@@ -577,12 +573,6 @@ convertdate.holidays           convertdate.utils              </code></pre>
 <section id="weeknotes" class="title-slide slide level1 center">
 <h1>Weeknotes?</h1>
 
-</section>
-<section id="why-1" class="slide level2">
-<h2>Why</h2>
-<ul>
-<li>More problem oriented</li>
-</ul>
 </section>
 <section id="thanks" class="slide level2">
 <h2>Thanks</h2>
@@ -806,7 +796,7 @@ convertdate.holidays           convertdate.utils              </code></pre>
       });
     </script>
     <script type="application/vnd.jupyter.widget-state+json">
-    {"state":{"1558213256984e9b9df5f9d00776bf85":{"model_module":"jupyter-leaflet","model_module_version":"^0.20","model_name":"LeafletMarkerModel","state":{"_model_module":"jupyter-leaflet","_model_module_version":"^0.20","_model_name":"LeafletMarkerModel","_view_count":null,"_view_module":"jupyter-leaflet","_view_module_version":"^0.20","_view_name":"LeafletMarkerView","alt":"","base":false,"bottom":false,"draggable":true,"icon":null,"keyboard":true,"location":[51.51826807181277,-0.11807725782907953],"name":"","opacity":1,"options":["alt","draggable","keyboard","pm_ignore","rise_offset","rise_on_hover","rotation_angle","rotation_origin","title","z_index_offset"],"pane":"","pm_ignore":true,"popup":null,"popup_max_height":null,"popup_max_width":300,"popup_min_width":50,"rise_offset":250,"rise_on_hover":false,"rotation_angle":0,"rotation_origin":"","snap_ignore":true,"subitems":[],"title":"","visible":true,"z_index_offset":0}},"17e1c1f16ea94fe48f7638103437781b":{"model_module":"jupyter-leaflet","model_module_version":"^0.20","model_name":"LeafletTileLayerModel","state":{"_model_module":"jupyter-leaflet","_model_module_version":"^0.20","_model_name":"LeafletTileLayerModel","_view_count":null,"_view_module":"jupyter-leaflet","_view_module_version":"^0.20","_view_name":"LeafletTileLayerView","attribution":"&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors","base":true,"bottom":true,"bounds":null,"detect_retina":false,"loading":false,"max_native_zoom":null,"max_zoom":19,"min_native_zoom":null,"min_zoom":1,"name":"OpenStreetMap.Mapnik","no_wrap":false,"opacity":1,"options":["attribution","bounds","detect_retina","max_native_zoom","max_zoom","min_native_zoom","min_zoom","no_wrap","pm_ignore","tile_size","tms","zoom_offset"],"pane":"","pm_ignore":true,"popup":null,"popup_max_height":null,"popup_max_width":300,"popup_min_width":50,"show_loading":false,"snap_ignore":true,"subitems":[],"tile_size":256,"tms":false,"url":"https://tile.openstreetmap.org/{z}/{x}/{y}.png","visible":true,"zoom_offset":0}},"2de4f5b95930427b84bd7a7d888238cf":{"model_module":"jupyter-leaflet","model_module_version":"^0.20","model_name":"LeafletMapStyleModel","state":{"_model_module":"jupyter-leaflet","_model_module_version":"^0.20","_model_name":"LeafletMapStyleModel","_view_count":null,"_view_module":"@jupyter-widgets/base","_view_module_version":"2.0.0","_view_name":"StyleView","cursor":"grab"}},"364d94c33719482397d6b4bf5730c11f":{"model_module":"jupyter-leaflet","model_module_version":"^0.20","model_name":"LeafletCircleModel","state":{"_model_module":"jupyter-leaflet","_model_module_version":"^0.20","_model_name":"LeafletCircleModel","_view_count":null,"_view_module":"jupyter-leaflet","_view_module_version":"^0.20","_view_name":"LeafletCircleView","base":false,"bottom":false,"color":"#0033FF","dash_array":null,"fill":true,"fill_color":"orange","fill_opacity":0.35,"line_cap":"round","line_join":"round","location":[51.62315272689227,-0.5185542750309865],"name":"","opacity":1,"options":["color","dash_array","fill","fill_color","fill_opacity","line_cap","line_join","opacity","pm_ignore","pointer_events","radius","stroke","weight"],"pane":"","pm_ignore":true,"pointer_events":"","popup":null,"popup_max_height":null,"popup_max_width":300,"popup_min_width":50,"radius":12000,"snap_ignore":true,"stroke":false,"subitems":[],"weight":5}},"61e484e0b818448f8bcaf5e4e06ef002":{"model_module":"jupyter-leaflet","model_module_version":"^0.20","model_name":"LeafletMapStyleModel","state":{"_model_module":"jupyter-leaflet","_model_module_version":"^0.20","_model_name":"LeafletMapStyleModel","_view_count":null,"_view_module":"@jupyter-widgets/base","_view_module_version":"2.0.0","_view_name":"StyleView","cursor":"move"}},"7d43676d32c441a9bcd1e15875c08b1b":{"model_module":"jupyter-leaflet","model_module_version":"^0.20","model_name":"LeafletZoomControlModel","state":{"_model_module":"jupyter-leaflet","_model_module_version":"^0.20","_model_name":"LeafletZoomControlModel","_view_count":null,"_view_module":"jupyter-leaflet","_view_module_version":"^0.20","_view_name":"LeafletZoomControlView","options":["position","zoom_in_text","zoom_in_title","zoom_out_text","zoom_out_title"],"position":"topleft","zoom_in_text":"+","zoom_in_title":"Zoom in","zoom_out_text":"-","zoom_out_title":"Zoom out"}},"a2abbc36f59641158d5d392f62b26dad":{"model_module":"jupyter-leaflet","model_module_version":"^0.20","model_name":"LeafletMapStyleModel","state":{"_model_module":"jupyter-leaflet","_model_module_version":"^0.20","_model_name":"LeafletMapStyleModel","_view_count":null,"_view_module":"@jupyter-widgets/base","_view_module_version":"2.0.0","_view_name":"StyleView","cursor":"grab"}},"adf7ccf19dcc443db503931a0418edb9":{"model_module":"jupyter-leaflet","model_module_version":"^0.20","model_name":"LeafletMapModel","state":{"_dom_classes":[],"_model_module":"jupyter-leaflet","_model_module_version":"^0.20","_model_name":"LeafletMapModel","_view_count":null,"_view_module":"jupyter-leaflet","_view_module_version":"^0.20","_view_name":"LeafletMapView","bottom":0,"bounce_at_zoom_limits":true,"box_zoom":true,"center":[51.57,-0.25],"close_popup_on_click":true,"controls":["IPY_MODEL_7d43676d32c441a9bcd1e15875c08b1b","IPY_MODEL_e0ab61021f8a42afa933b145097a2d18","IPY_MODEL_e27dea95ccf34b7ca02695297d6679a5"],"crs":{"custom":false,"name":"EPSG3857"},"default_style":"IPY_MODEL_2de4f5b95930427b84bd7a7d888238cf","double_click_zoom":true,"dragging":true,"dragging_style":"IPY_MODEL_61e484e0b818448f8bcaf5e4e06ef002","east":0,"fullscreen":false,"inertia":true,"inertia_deceleration":3000,"inertia_max_speed":1500,"interpolation":"bilinear","keyboard":true,"keyboard_pan_offset":80,"keyboard_zoom_offset":1,"layers":["IPY_MODEL_17e1c1f16ea94fe48f7638103437781b","IPY_MODEL_364d94c33719482397d6b4bf5730c11f","IPY_MODEL_1558213256984e9b9df5f9d00776bf85"],"layout":"IPY_MODEL_e425961943d743349431a93702e2f4d4","left":9007199254740991,"max_zoom":null,"min_zoom":null,"modisdate":"2026-10-19","north":0,"options":["bounce_at_zoom_limits","box_zoom","center","close_popup_on_click","double_click_zoom","dragging","fullscreen","inertia","inertia_deceleration","inertia_max_speed","interpolation","keyboard","keyboard_pan_offset","keyboard_zoom_offset","max_zoom","min_zoom","prefer_canvas","scroll_wheel_zoom","tap","tap_tolerance","touch_zoom","world_copy_jump","zoom","zoom_animation_threshold","zoom_delta","zoom_snap"],"panes":{},"prefer_canvas":false,"right":0,"scroll_wheel_zoom":false,"south":0,"style":"IPY_MODEL_a2abbc36f59641158d5d392f62b26dad","tabbable":null,"tap":true,"tap_tolerance":15,"tooltip":null,"top":9007199254740991,"touch_zoom":true,"west":0,"window_url":"","world_copy_jump":false,"zoom":10,"zoom_animation_threshold":4,"zoom_delta":1,"zoom_snap":1}},"e0ab61021f8a42afa933b145097a2d18":{"model_module":"jupyter-leaflet","model_module_version":"^0.20","model_name":"LeafletAttributionControlModel","state":{"_model_module":"jupyter-leaflet","_model_module_version":"^0.20","_model_name":"LeafletAttributionControlModel","_view_count":null,"_view_module":"jupyter-leaflet","_view_module_version":"^0.20","_view_name":"LeafletAttributionControlView","options":["position","prefix"],"position":"bottomright","prefix":"ipyleaflet"}},"e27dea95ccf34b7ca02695297d6679a5":{"model_module":"jupyter-leaflet","model_module_version":"^0.20","model_name":"LeafletScaleControlModel","state":{"_model_module":"jupyter-leaflet","_model_module_version":"^0.20","_model_name":"LeafletScaleControlModel","_view_count":null,"_view_module":"jupyter-leaflet","_view_module_version":"^0.20","_view_name":"LeafletScaleControlView","imperial":true,"max_width":100,"metric":true,"options":["imperial","max_width","metric","position","update_when_idle"],"position":"bottomleft","update_when_idle":false}},"e425961943d743349431a93702e2f4d4":{"model_module":"@jupyter-widgets/base","model_module_version":"2.0.0","model_name":"LayoutModel","state":{"_model_module":"@jupyter-widgets/base","_model_module_version":"2.0.0","_model_name":"LayoutModel","_view_count":null,"_view_module":"@jupyter-widgets/base","_view_module_version":"2.0.0","_view_name":"LayoutView","align_content":null,"align_items":null,"align_self":null,"border_bottom":null,"border_left":null,"border_right":null,"border_top":null,"bottom":null,"display":null,"flex":null,"flex_flow":null,"grid_area":null,"grid_auto_columns":null,"grid_auto_flow":null,"grid_auto_rows":null,"grid_column":null,"grid_gap":null,"grid_row":null,"grid_template_areas":null,"grid_template_columns":null,"grid_template_rows":null,"height":"550px","justify_content":null,"justify_items":null,"left":null,"margin":null,"max_height":null,"max_width":null,"min_height":null,"min_width":null,"object_fit":null,"object_position":null,"order":null,"overflow":null,"padding":null,"right":null,"top":null,"visibility":null,"width":"850px"}}},"version_major":2,"version_minor":0}
+    {"state":{"1cb2aa30b5a542d9a51375b6a0363061":{"model_module":"jupyter-leaflet","model_module_version":"^0.20","model_name":"LeafletMapStyleModel","state":{"_model_module":"jupyter-leaflet","_model_module_version":"^0.20","_model_name":"LeafletMapStyleModel","_view_count":null,"_view_module":"@jupyter-widgets/base","_view_module_version":"2.0.0","_view_name":"StyleView","cursor":"grab"}},"42533abe518545a38bceadddba3f82f3":{"model_module":"jupyter-leaflet","model_module_version":"^0.20","model_name":"LeafletMapModel","state":{"_dom_classes":[],"_model_module":"jupyter-leaflet","_model_module_version":"^0.20","_model_name":"LeafletMapModel","_view_count":null,"_view_module":"jupyter-leaflet","_view_module_version":"^0.20","_view_name":"LeafletMapView","bottom":0,"bounce_at_zoom_limits":true,"box_zoom":true,"center":[51.57,-0.25],"close_popup_on_click":true,"controls":["IPY_MODEL_aab8935660d246cfbde90b31d3b2eb22","IPY_MODEL_e1179a3b22c84be3b05be6ee5c66251f","IPY_MODEL_e67fde673090416bb2bde9de01f546c8"],"crs":{"custom":false,"name":"EPSG3857"},"default_style":"IPY_MODEL_79b2793195724f8cb1d110545d047ac5","double_click_zoom":true,"dragging":true,"dragging_style":"IPY_MODEL_aaca34e264f446999ca0451454cffda6","east":0,"fullscreen":false,"inertia":true,"inertia_deceleration":3000,"inertia_max_speed":1500,"interpolation":"bilinear","keyboard":true,"keyboard_pan_offset":80,"keyboard_zoom_offset":1,"layers":["IPY_MODEL_9d3abb33435e4df3a48c9d1a9142283c","IPY_MODEL_cae0e968475345ebbf5e89bfd42f0fa9","IPY_MODEL_42aa1afe794542ff904ee0847d277b67"],"layout":"IPY_MODEL_5b6d35bf81b848908c1edcf05e9dffe3","left":9007199254740991,"max_zoom":null,"min_zoom":null,"modisdate":"2026-10-19","north":0,"options":["bounce_at_zoom_limits","box_zoom","center","close_popup_on_click","double_click_zoom","dragging","fullscreen","inertia","inertia_deceleration","inertia_max_speed","interpolation","keyboard","keyboard_pan_offset","keyboard_zoom_offset","max_zoom","min_zoom","prefer_canvas","scroll_wheel_zoom","tap","tap_tolerance","touch_zoom","world_copy_jump","zoom","zoom_animation_threshold","zoom_delta","zoom_snap"],"panes":{},"prefer_canvas":false,"right":0,"scroll_wheel_zoom":false,"south":0,"style":"IPY_MODEL_1cb2aa30b5a542d9a51375b6a0363061","tabbable":null,"tap":true,"tap_tolerance":15,"tooltip":null,"top":9007199254740991,"touch_zoom":true,"west":0,"window_url":"","world_copy_jump":false,"zoom":10,"zoom_animation_threshold":4,"zoom_delta":1,"zoom_snap":1}},"42aa1afe794542ff904ee0847d277b67":{"model_module":"jupyter-leaflet","model_module_version":"^0.20","model_name":"LeafletMarkerModel","state":{"_model_module":"jupyter-leaflet","_model_module_version":"^0.20","_model_name":"LeafletMarkerModel","_view_count":null,"_view_module":"jupyter-leaflet","_view_module_version":"^0.20","_view_name":"LeafletMarkerView","alt":"","base":false,"bottom":false,"draggable":true,"icon":null,"keyboard":true,"location":[51.51826807181277,-0.11807725782907953],"name":"","opacity":1,"options":["alt","draggable","keyboard","pm_ignore","rise_offset","rise_on_hover","rotation_angle","rotation_origin","title","z_index_offset"],"pane":"","pm_ignore":true,"popup":null,"popup_max_height":null,"popup_max_width":300,"popup_min_width":50,"rise_offset":250,"rise_on_hover":false,"rotation_angle":0,"rotation_origin":"","snap_ignore":true,"subitems":[],"title":"","visible":true,"z_index_offset":0}},"5b6d35bf81b848908c1edcf05e9dffe3":{"model_module":"@jupyter-widgets/base","model_module_version":"2.0.0","model_name":"LayoutModel","state":{"_model_module":"@jupyter-widgets/base","_model_module_version":"2.0.0","_model_name":"LayoutModel","_view_count":null,"_view_module":"@jupyter-widgets/base","_view_module_version":"2.0.0","_view_name":"LayoutView","align_content":null,"align_items":null,"align_self":null,"border_bottom":null,"border_left":null,"border_right":null,"border_top":null,"bottom":null,"display":null,"flex":null,"flex_flow":null,"grid_area":null,"grid_auto_columns":null,"grid_auto_flow":null,"grid_auto_rows":null,"grid_column":null,"grid_gap":null,"grid_row":null,"grid_template_areas":null,"grid_template_columns":null,"grid_template_rows":null,"height":"550px","justify_content":null,"justify_items":null,"left":null,"margin":null,"max_height":null,"max_width":null,"min_height":null,"min_width":null,"object_fit":null,"object_position":null,"order":null,"overflow":null,"padding":null,"right":null,"top":null,"visibility":null,"width":"850px"}},"79b2793195724f8cb1d110545d047ac5":{"model_module":"jupyter-leaflet","model_module_version":"^0.20","model_name":"LeafletMapStyleModel","state":{"_model_module":"jupyter-leaflet","_model_module_version":"^0.20","_model_name":"LeafletMapStyleModel","_view_count":null,"_view_module":"@jupyter-widgets/base","_view_module_version":"2.0.0","_view_name":"StyleView","cursor":"grab"}},"9d3abb33435e4df3a48c9d1a9142283c":{"model_module":"jupyter-leaflet","model_module_version":"^0.20","model_name":"LeafletTileLayerModel","state":{"_model_module":"jupyter-leaflet","_model_module_version":"^0.20","_model_name":"LeafletTileLayerModel","_view_count":null,"_view_module":"jupyter-leaflet","_view_module_version":"^0.20","_view_name":"LeafletTileLayerView","attribution":"&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors","base":true,"bottom":true,"bounds":null,"detect_retina":false,"loading":false,"max_native_zoom":null,"max_zoom":19,"min_native_zoom":null,"min_zoom":1,"name":"OpenStreetMap.Mapnik","no_wrap":false,"opacity":1,"options":["attribution","bounds","detect_retina","max_native_zoom","max_zoom","min_native_zoom","min_zoom","no_wrap","pm_ignore","tile_size","tms","zoom_offset"],"pane":"","pm_ignore":true,"popup":null,"popup_max_height":null,"popup_max_width":300,"popup_min_width":50,"show_loading":false,"snap_ignore":true,"subitems":[],"tile_size":256,"tms":false,"url":"https://tile.openstreetmap.org/{z}/{x}/{y}.png","visible":true,"zoom_offset":0}},"aab8935660d246cfbde90b31d3b2eb22":{"model_module":"jupyter-leaflet","model_module_version":"^0.20","model_name":"LeafletZoomControlModel","state":{"_model_module":"jupyter-leaflet","_model_module_version":"^0.20","_model_name":"LeafletZoomControlModel","_view_count":null,"_view_module":"jupyter-leaflet","_view_module_version":"^0.20","_view_name":"LeafletZoomControlView","options":["position","zoom_in_text","zoom_in_title","zoom_out_text","zoom_out_title"],"position":"topleft","zoom_in_text":"+","zoom_in_title":"Zoom in","zoom_out_text":"-","zoom_out_title":"Zoom out"}},"aaca34e264f446999ca0451454cffda6":{"model_module":"jupyter-leaflet","model_module_version":"^0.20","model_name":"LeafletMapStyleModel","state":{"_model_module":"jupyter-leaflet","_model_module_version":"^0.20","_model_name":"LeafletMapStyleModel","_view_count":null,"_view_module":"@jupyter-widgets/base","_view_module_version":"2.0.0","_view_name":"StyleView","cursor":"move"}},"cae0e968475345ebbf5e89bfd42f0fa9":{"model_module":"jupyter-leaflet","model_module_version":"^0.20","model_name":"LeafletCircleModel","state":{"_model_module":"jupyter-leaflet","_model_module_version":"^0.20","_model_name":"LeafletCircleModel","_view_count":null,"_view_module":"jupyter-leaflet","_view_module_version":"^0.20","_view_name":"LeafletCircleView","base":false,"bottom":false,"color":"#0033FF","dash_array":null,"fill":true,"fill_color":"orange","fill_opacity":0.35,"line_cap":"round","line_join":"round","location":[51.62315272689227,-0.5185542750309865],"name":"","opacity":1,"options":["color","dash_array","fill","fill_color","fill_opacity","line_cap","line_join","opacity","pm_ignore","pointer_events","radius","stroke","weight"],"pane":"","pm_ignore":true,"pointer_events":"","popup":null,"popup_max_height":null,"popup_max_width":300,"popup_min_width":50,"radius":12000,"snap_ignore":true,"stroke":false,"subitems":[],"weight":5}},"e1179a3b22c84be3b05be6ee5c66251f":{"model_module":"jupyter-leaflet","model_module_version":"^0.20","model_name":"LeafletAttributionControlModel","state":{"_model_module":"jupyter-leaflet","_model_module_version":"^0.20","_model_name":"LeafletAttributionControlModel","_view_count":null,"_view_module":"jupyter-leaflet","_view_module_version":"^0.20","_view_name":"LeafletAttributionControlView","options":["position","prefix"],"position":"bottomright","prefix":"ipyleaflet"}},"e67fde673090416bb2bde9de01f546c8":{"model_module":"jupyter-leaflet","model_module_version":"^0.20","model_name":"LeafletScaleControlModel","state":{"_model_module":"jupyter-leaflet","_model_module_version":"^0.20","_model_name":"LeafletScaleControlModel","_view_count":null,"_view_module":"jupyter-leaflet","_view_module_version":"^0.20","_view_name":"LeafletScaleControlView","imperial":true,"max_width":100,"metric":true,"options":["imperial","max_width","metric","position","update_when_idle"],"position":"bottomleft","update_when_idle":false}}},"version_major":2,"version_minor":0}
     </script>
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
