@@ -20,8 +20,8 @@ m = Map(
     center=(51.57, -0.25),
     zoom=10,
 )
-m.layout.width = "800px"
-m.layout.height = "700px"
+m.layout.width = "850px"
+m.layout.height = "550px"
 
 for splodge in splodges:
     radius, opacity = (12000, 0.35)
@@ -63,7 +63,7 @@ Most of my early life and schooling took place inside this orange circle.
 :::
 
 ::: {.column width="30%"}
-![A parasitic bolete (*Pseudoboletus parasiticus*) growing on a common earthball (*Scleroderma citrinum*)](../../images/parasitic_bolete.jpg){fig-alt="Parasitic bolete mushrooms growing on a pale earthball" height="400"}
+![A parasitic bolete (*Pseudoboletus parasiticus*, top and bottom) growing on a common earthball (*Scleroderma citrinum*, centre)](../../images/parasitic_bolete.jpg){fig-alt="Overhead photo of a woodland floor of dark soil and bright green moss, with a few twigs, an oak leaf and an acorn at the edges. In the centre is a large, rounded, pale cream earthball fungus with a rough, scaly, speckled surface. Four golden-yellow parasitic bolete mushrooms with glossy orange-brown caps and stout yellow stems grow from around it: two at the top, one with a large cap and one smaller, and two at the bottom with their rounded caps pressed together side by side." height="400"}
 :::
 
 ::::
