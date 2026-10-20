@@ -44,7 +44,11 @@ Most of my early life and schooling took place inside this orange circle.
 - Citrix Systems
 - Bioinformatics MSc — King's College London
 - Anthony Nolan Research Institute (first RSE job!)
-- UCL RITS/ARC
+- UCL RITS/ARC (2018–present)
+
+::: {.notes}
+Windows CE, old unixes, C, C++ C#.
+:::
 
 ## About me {.icons}
 
@@ -94,6 +98,12 @@ flowchart LR
     * [Emap repo](https://github.com/SAFEHR-data/emap)
     * [Waveform controller repo](https://github.com/SAFEHR-data/waveform-controller)
 
+::: {.notes}
+Just to make you aware of the basic overview.
+
+More detailed write-up to follow. Weeknotes?
+:::
+
 # Calendar systems
 
 There have been *a lot* through history. Here are three.
@@ -107,7 +117,8 @@ This is going to be quite euro-centric.
 Connecting Histories, Connecting Heritage: Early Modern Cities and Their Afterlives 
 
 ::: {.notes}
-We made a Django site to collect historical documents, and many 
+Not going into full project details, but we made a Django site to collect historical documents,
+and many of those documents don't use the Gregorian calendar that we use today.
 :::
 
 ## PostgreSQL date types
@@ -117,7 +128,11 @@ We made a Django site to collect historical documents, and many
 https://www.postgresql.org/docs/18/datatype-datetime.html
 
 ::: {.notes}
+Oh dear!
+
 Did not expect this to ever be a problem!
+
+It also supports something called Julian Day, which is an astronomical thing not related to the Julian Calendar.
 :::
 
 ## Why are 11 days missing?
@@ -132,6 +147,8 @@ Su Mo Tu We Th Fr Sa
 ```
 
 ::: {.notes}
+Let's first talk about the actual underlying problem.
+
 The "2" and the "14" are not in the same calendar system.
 
 But that's when Britain and its empire switched from the Julian to Gregorian Calendar,
