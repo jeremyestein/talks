@@ -2,10 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://jeremyestein.github.io/talks/index.html</loc>
-    <lastmod>2026-10-19T15:29:50.517Z</lastmod>
+    <lastmod>2026-10-20T10:03:10.592Z</lastmod>
   </url>
   <url>
     <loc>https://jeremyestein.github.io/talks/talks/example-talk/index.html</loc>
-    <lastmod>2026-10-19T15:29:50.518Z</lastmod>
+    <lastmod>2026-10-20T10:03:10.592Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jeremyestein.github.io/talks/talks/re-intro-calendars/index.html</loc>
+    <lastmod>2026-10-20T10:03:10.593Z</lastmod>
   </url>
 </urlset>

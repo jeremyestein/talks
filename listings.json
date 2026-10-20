@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/talks/re-intro-calendars/index.html",
       "/talks/example-talk/index.html"
     ]
   }

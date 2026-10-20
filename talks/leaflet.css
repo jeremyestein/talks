@@ -1,0 +1,8 @@
+/* reveal.js gives slide images a margin and border; Leaflet tiles are <img>s,
+   so undo that inside maps or the tiles drift out of line with markers */
+.reveal .leaflet-container img {
+  margin: 0;
+  border: none;
+  box-shadow: none;
+  background: none;
+}
