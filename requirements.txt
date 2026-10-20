@@ -1,2 +1,5 @@
 quarto-cli==1.10.18
 ipyleaflet==0.20.0
+jupyterlab==4.6.4
+jupyter==1.1.1
+convertdate==2.4.1

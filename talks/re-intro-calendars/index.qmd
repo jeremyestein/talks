@@ -1,7 +1,7 @@
 ---
 title: "Re-introduction"
-subtitle: "with a brief mention of calendar systems"
-date: 2026-10-19
+subtitle: "And recent work, with a brief talk about calendar systems"
+date: 2026-10-20
 description: "Re-intro, status update, weeknotes, calendar systems"
 ---
 
@@ -35,37 +35,37 @@ m
 ```
 
 ::: {.notes}
-CHT NDB beacon!
+Most of my early life and schooling took place inside this orange circle.
 :::
 
-## Incremental bullets
+## Brief career highlights
 
-::: {.incremental}
-- First point
-- Second point
-- Third point
-:::
+- Computer Science BSc — Warwick University 
+- Citrix Systems
+- Bioinformatics MSc — King's College London
+- Anthony Nolan Research Institute (first RSE job!)
+- UCL RITS/ARC
 
-## Two columns
+## About me
 
-:::: {.columns}
-::: {.column width="50%"}
-Left column
-:::
-::: {.column width="50%"}
-Right column
-:::
-::::
 
-## Code
+{{< fa volume-xmark >}}
 
-```python
-def hello():
-    print("Hello, world!")
-```
+## Emap Waveform Exporter
+
 
 
 # Calendar systems
+
+There have been *a lot* through history. Here are three.
+
+## Why
+
+Connecting Histories, Connecting Heritage: Early Modern Cities and Their Afterlives 
+
+::: {.notes}
+We made a Django site to collect historical documents, and many 
+:::
 
 ## PostgreSQL date types
 
@@ -75,39 +75,82 @@ https://www.postgresql.org/docs/18/datatype-datetime.html
 
 ## Why are 11 days missing?
 
-```{python}
-%%bash
-cal -m 9 1752
-
+```{.bash code-line-numbers="false"}
+$ cal -m 9 1752
+   September 1752     
+Su Mo Tu We Th Fr Sa  
+       1  2 14 15 16  
+17 18 19 20 21 22 23  
+24 25 26 27 28 29 30  
 ```
 
+::: {.notes}
+The utility cal was written for Unix so tracks the US calendar system.
+(Changing your locale does not affect its output)
+The US system follows the British system, since it was part of the British Empire at the time.
+:::
 
 ## Gregorian calendar
 
 * It's mainly about leap days (and Easter)
 
 ::: {.fragment}
-| According to | 1 x sun orbit == | Leap year pattern |
-| --- | --- | --- |
-| Julian Calendar | 365.25 rotations | 1 / 4 |
-| Gregorian Calendar | 365.2425 rotations | 1 / 4 - 1 / 100 + 1 / 400 |
-| The actual earth | 365.2422 rotations | |
+| According to | Rotations in a solar orbit | Extra days |
+| --- | ---: | --- |
+| Julian Calendar | $365.2500$ | $\frac{1}{4}$ |
+| Gregorian Calendar | $365.2425$ | $\frac{1}{4} - \frac{1}{100} + \frac{1}{400}$ |
+| The actual earth | $\approx 365.2422$ | |
 :::
 
 
 ::: {.incremental}
-* First adopted Friday 15 October 1582
+* First adopted **Friday 15 October 1582**
 :::
 
 ::: {.notes}
 First day of the new Gregorian calendar was Friday 15 October 1582.
 444 years and 5 days ago!
 
+Julian takes ~128 years to accumulate one day of discrepancy.
+Gregorian takes ~3000 years.
+
 Thursday 4 October 1582 was followed by Friday 15 October 1582.
 
 They jumped forward, missing out 10 days.
 
 :::
+
+# Conversion in Python
+
+Python package called `convertdate`
+
+```{python}
+#| echo: true
+#| output: true
+import convertdate
+
+julians = ((1752, 9, 2), (1752, 9, 3))
+for jul in julians:
+    greg = convertdate.julian.to_gregorian(*jul)
+    print(f"{jul} -> {greg}")
+```
+
+## Yet more calendars...
+
+```
+>>> import convertdate
+>>> convertdate.
+convertdate.armenian           convertdate.indian_civil       
+convertdate.bahai              convertdate.islamic            
+convertdate.coptic             convertdate.iso                
+convertdate.data               convertdate.julian             
+convertdate.daycount           convertdate.julianday          
+convertdate.dublin             convertdate.mayan              
+convertdate.french_republican  convertdate.ordinal            
+convertdate.gregorian          convertdate.persian            
+convertdate.hebrew             convertdate.positivist         
+convertdate.holidays           convertdate.utils              
+```
 
 # Weeknotes?
 
