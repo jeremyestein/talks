@@ -25,7 +25,7 @@
     "href": "talks/re-intro-calendars/index.html#emap-waveform-exporter",
     "title": "Re-introduction",
     "section": "Emap Waveform Exporter",
-    "text": "Emap Waveform Exporter\n\n\n\n\n\n%%{init: {\"themeVariables\": {\"fontSize\": \"24px\"}}}%%\nflowchart LR\n    subgraph UCLH\n        direction LR\n        M[\"machines that go ping&lt;br/&gt;(ECG, ventilator, etc)\"] --&gt; G[\"GAE\"]\n    end\n    subgraph UCL\n        D[\"Data Safe Haven\"]\n    end\n    G --&gt; D\n    classDef node fill:#ffffff,stroke:#222222,stroke-width:2px,color:#000000\n    class M,G,D node\n    style UCLH fill:#fff4cc,stroke:#222222,stroke-width:2px,color:#000000\n    style UCL fill:#d9ecff,stroke:#222222,stroke-width:2px,color:#000000"
+    "text": "Emap Waveform Exporter\n\n\n\n\n\n%%{init: {\"themeVariables\": {\"fontSize\": \"24px\"}}}%%\nflowchart LR\n    subgraph UCLH\n        direction LR\n        M[\"machines that go &lt;em&gt;ping&lt;/em&gt;&lt;br/&gt;(ECG, ventilator, etc)\"] --&gt; G[\"GAE\"]\n    end\n    subgraph UCL\n        D[\"Data Safe Haven\"]\n    end\n    G --&gt; D\n    classDef node fill:#ffffff,stroke:#222222,stroke-width:2px,color:#000000\n    class M,G,D node\n    style UCLH fill:#fff4cc,stroke:#222222,stroke-width:2px,color:#000000\n    style UCL fill:#d9ecff,stroke:#222222,stroke-width:2px,color:#000000\n\n\n\n\n\n\n\nRepo links\n\nEmap repo\nWaveform controller repo"
   },
   {
     "objectID": "talks/re-intro-calendars/index.html#why",
