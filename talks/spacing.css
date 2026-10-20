@@ -1,0 +1,15 @@
+/* reveal.js packs slide titles tight against the content below them */
+.reveal .slides section > h2 {
+  margin-bottom: 0.8em;
+}
+
+/* rows of icons: breathing room between rows and between icons */
+.reveal .slides section.icons p {
+  margin: 0 0 0.6em;
+  word-spacing: 0.4em;
+}
+
+/* keep figure captions modest */
+.reveal .slides section.icons figcaption {
+  font-size: 0.5em;
+}
