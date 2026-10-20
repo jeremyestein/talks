@@ -7,4 +7,6 @@ format:
     hash: true
     chalkboard: false
     preview-links: auto
-    css: leaflet.css
+    css:
+      - leaflet.css
+      - spacing.css

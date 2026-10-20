@@ -46,10 +46,27 @@ Most of my early life and schooling took place inside this orange circle.
 - Anthony Nolan Research Institute (first RSE job!)
 - UCL RITS/ARC
 
-## About me
+## About me {.icons}
 
+:::: {.columns}
 
-{{< fa volume-xmark >}}
+::: {.column width="70%"}
+{{< fa chess-knight size=2x >}} {{< fa chess-pawn size=2x >}} {{< fa chess-board size=2x >}} {{< fa chess-rook size=2x >}}
+
+{{< fa seedling size=2x >}} {{< fa tree size=2x >}} {{< fa person-hiking size=2x >}} {{< fa mountain size=2x >}}
+
+{{< fa bread-slice size=2x >}} {{< fa wheat-awn size=2x >}} {{< fa jar size=2x >}} {{< fa bowl-rice size=2x >}} {{< fa lemon size=2x >}}
+
+{{< fa microchip size=2x >}} {{< fa bolt size=2x >}} {{< fa plug size=2x >}} {{< fa laptop-code size=2x >}} {{< fa robot size=2x >}}
+
+{{< fa volume-xmark size=3x >}}
+:::
+
+::: {.column width="30%"}
+![A parasitic bolete (*Pseudoboletus parasiticus*) growing on a common earthball (*Scleroderma citrinum*)](../../images/parasitic_bolete.jpg){fig-alt="Parasitic bolete mushrooms growing on a pale earthball" height="400"}
+:::
+
+::::
 
 ## Emap Waveform Exporter
 
@@ -58,6 +75,10 @@ Most of my early life and schooling took place inside this orange circle.
 # Calendar systems
 
 There have been *a lot* through history. Here are three.
+
+::: {.notes}
+This is going to be quite euro-centric.
+:::
 
 ## Why
 
@@ -85,10 +106,28 @@ Su Mo Tu We Th Fr Sa
 ```
 
 ::: {.notes}
+The "2" and the "14" are not in the same calendar system.
+
+But that's when Britain and its empire switched from the Julian to Gregorian Calendar,
+AND changed the start of the year from 25th March to 1st January.
+
 The utility cal was written for Unix so tracks the US calendar system.
 (Changing your locale does not affect its output)
 The US system follows the British system, since it was part of the British Empire at the time.
 :::
+
+## Calendar (New Style) Act 1750
+::: {.incremental}
+* British Empire moves from Julian to a calender identical to the Gregorian calendar
+* New years day moves from 25th March to 1st January
+* September 1752 gets a bit of a trim
+* 1751 loses three months altogether(!)
+:::
+
+::: {.notes}
+
+:::
+
 
 ## Gregorian calendar
 
