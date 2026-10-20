@@ -70,6 +70,24 @@ Most of my early life and schooling took place inside this orange circle.
 
 ## Emap Waveform Exporter
 
+```{mermaid}
+%%| fig-alt: "Diagram of the Emap waveform data flow. Inside a large box labelled UCLH, a box labelled 'machines that go ping' has an arrow to a box labelled GAE. An arrow leads from GAE to a box labelled DSH, which sits inside a separate box labelled UCL."
+%%{init: {"themeVariables": {"fontSize": "24px"}}}%%
+flowchart LR
+    subgraph UCLH
+        direction LR
+        M["machines that go ping<br/>(ECG, ventilator, etc)"] --> G["GAE"]
+    end
+    subgraph UCL
+        D["Data Safe Haven"]
+    end
+    G --> D
+    classDef node fill:#ffffff,stroke:#222222,stroke-width:2px,color:#000000
+    class M,G,D node
+    style UCLH fill:#fff4cc,stroke:#222222,stroke-width:2px,color:#000000
+    style UCL fill:#d9ecff,stroke:#222222,stroke-width:2px,color:#000000
+```
+
 
 
 # Calendar systems
@@ -93,6 +111,10 @@ We made a Django site to collect historical documents, and many
 > Dates are counted according to the Gregorian calendar, even in years before that calendar was introduced
 
 https://www.postgresql.org/docs/18/datatype-datetime.html
+
+::: {.notes}
+Did not expect this to ever be a problem!
+:::
 
 ## Why are 11 days missing?
 
@@ -119,10 +141,15 @@ The US system follows the British system, since it was part of the British Empir
 ## Calendar (New Style) Act 1750
 ::: {.incremental}
 * British Empire moves from Julian to a calender identical to the Gregorian calendar
-* New years day moves from 25th March to 1st January
+* New year's day moves from 25th March to 1st January
 * September 1752 gets a bit of a trim
 * 1751 loses three months altogether(!)
 :::
+
+::: {.fragment}
+![An issue of The London Gazette spanning the changeover date, showing Old Style (O.S.) and New Style (N.S.) dates](../../images/gazette.png){fig-alt="An issue of The London Gazette spanning the changeover date" height="200"}
+:::
+
 
 ::: {.notes}
 
@@ -159,7 +186,18 @@ They jumped forward, missing out 10 days.
 
 :::
 
-# Conversion in Python
+## Summary
+
+One row == one adjacent day
+
+| Britain (Julian, year starts 25 March) |  Britain (Julian, year starts 1 Jan) | More Veneto(Julian, year starts 1 March) | Gregorian |
+| --- | --- | --- | --- |
+| <mark>31 Dec 1751</mark> | 31 Dec 1751 | 31 Dec 1751 | 11 Jan 1752 |
+| 1 Jan 1751 | <mark>1 Jan 1752</mark> | 1 Jan 1751 | 12 Jan 1752 |
+
+(highlighted = local date in use on that day)
+
+## Conversion in Python
 
 Python package called `convertdate`
 
