@@ -70,13 +70,14 @@ Most of my early life and schooling took place inside this orange circle.
 
 ## Emap Waveform Exporter
 
+
 ```{mermaid}
 %%| fig-alt: "Diagram of the Emap waveform data flow. Inside a large box labelled UCLH, a box labelled 'machines that go ping' has an arrow to a box labelled GAE. An arrow leads from GAE to a box labelled DSH, which sits inside a separate box labelled UCL."
 %%{init: {"themeVariables": {"fontSize": "24px"}}}%%
 flowchart LR
     subgraph UCLH
         direction LR
-        M["machines that go ping<br/>(ECG, ventilator, etc)"] --> G["GAE"]
+        M["machines that go <em>ping</em><br/>(ECG, ventilator, etc)"] --> G["GAE"]
     end
     subgraph UCL
         D["Data Safe Haven"]
@@ -89,6 +90,9 @@ flowchart LR
 ```
 
 
+* Repo links
+    * [Emap repo](https://github.com/SAFEHR-data/emap)
+    * [Waveform controller repo](https://github.com/SAFEHR-data/waveform-controller)
 
 # Calendar systems
 
