@@ -13,3 +13,8 @@
 .reveal .slides section.icons figcaption {
   font-size: 0.5em;
 }
+
+/* smaller caption for a single figure */
+.reveal .slides .small-caption figcaption {
+  font-size: 0.5em;
+}

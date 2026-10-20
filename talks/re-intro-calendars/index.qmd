@@ -114,7 +114,7 @@ This is going to be quite euro-centric.
 
 ## Why
 
-Connecting Histories, Connecting Heritage: Early Modern Cities and Their Afterlives 
+[Connecting Histories, Connecting Heritage: Early Modern Cities and Their Afterlives](https://www.connecting-histories-connecting-heritage.org/)
 
 ::: {.notes}
 Not going into full project details, but we made a Django site to collect historical documents,
@@ -167,17 +167,30 @@ The US system follows the British system, since it was part of the British Empir
 * 1751 loses three months altogether(!)
 :::
 
-::: {.fragment}
-![An issue of The London Gazette spanning the changeover date, showing Old Style (O.S.) and New Style (N.S.) dates](../../images/gazette.png){fig-alt="An issue of The London Gazette spanning the changeover date" height="200"}
+::: {.fragment .small-caption}
+![An issue of The London Gazette spanning the changeover date, showing Old Style (O.S.) and New Style (N.S.) dates](../../images/gazette.png){fig-alt="An issue of The London Gazette spanning the changeover date" height="150"}
 :::
 
 
 ::: {.notes}
 
+Will show you a summary to make it clearer...
+
 :::
 
+## Summary
 
-## Gregorian calendar
+One row == one adjacent day
+
+| Britain (Julian, year starts 25 March) |  Britain (Julian, year starts 1 Jan) | Gregorian |
+| --- | --- | --- |
+| <mark>31 Dec 1751</mark> | 31 Dec 1751 | 11 Jan 1752 |
+| 1 Jan 1751 | <mark>1 Jan 1752</mark> | 12 Jan 1752 |
+
+(highlighted = local date in use on that day)
+
+
+## Why Gregorian calendar?
 
 * It's mainly about leap days (and Easter)
 
@@ -191,7 +204,7 @@ The US system follows the British system, since it was part of the British Empir
 
 
 ::: {.incremental}
-* First adopted **Friday 15 October 1582**
+* First adopted **Friday 15 October 1582** (but not everywhere)
 :::
 
 ::: {.notes}
@@ -204,19 +217,7 @@ Gregorian takes ~3000 years.
 Thursday 4 October 1582 was followed by Friday 15 October 1582.
 
 They jumped forward, missing out 10 days.
-
 :::
-
-## Summary
-
-One row == one adjacent day
-
-| Britain (Julian, year starts 25 March) |  Britain (Julian, year starts 1 Jan) | More Veneto(Julian, year starts 1 March) | Gregorian |
-| --- | --- | --- | --- |
-| <mark>31 Dec 1751</mark> | 31 Dec 1751 | 31 Dec 1751 | 11 Jan 1752 |
-| 1 Jan 1751 | <mark>1 Jan 1752</mark> | 1 Jan 1751 | 12 Jan 1752 |
-
-(highlighted = local date in use on that day)
 
 ## Conversion in Python
 
@@ -252,9 +253,6 @@ convertdate.holidays           convertdate.utils
 
 # Weeknotes?
 
-## Why
-
-* More problem oriented
 
 ## Thanks
 
